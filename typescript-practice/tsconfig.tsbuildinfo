@@ -1,1 +1,1 @@
-{"root":["./src/first.ts","./src/interfaceandtypes.ts"],"version":"5.8.3"}
+{"root":["./src/enums.ts","./src/first.ts","./src/generics.ts","./src/interfaceandtypes.ts"],"version":"5.8.3"}
