@@ -56,15 +56,15 @@ isAdult(user)
 
 // so instead of that we can use interfaces to support DRY 
 
-interface User  {
-    firstName : String,
-    lastName : String,
+interface UserBody  {
+    firstName : string,
+    lastName : string,
     age : number,
-    email? : String // optional field 
+    email? : string // optional field 
 }
 
 // now you can use this interface to define the data type 
-function canDrive(user : User){
+function canDrive(user : UserBody){
     if(user.age>20) console.log("User can drive")
     else console.log("User cannot drive")
 }

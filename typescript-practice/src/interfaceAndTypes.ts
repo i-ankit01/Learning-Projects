@@ -29,14 +29,14 @@ e.greet("Hello ankit")
 
 // type in typescript 
 
-type User2 = {
+type Guy = {
     name : String,
     age : number,
     greet(phrase : String) : void
 }
 // almost same as interfaces but cannot be used as implementations while defining a class
 
-function printName(user : User2){
+function printName(user : Guy){
     console.log(user.name)
 }
 printName({
@@ -87,3 +87,13 @@ function leastValue(arr:numberArr){
 }
 leastValue([4,2,6])
 
+
+interface SimpleUser {
+    name : string,
+    age : number
+}
+
+function printAge(user1 : SimpleUser, user2 : SimpleUser){
+    console.log(user1.age + user2.age)
+}
+printAge({name : "ankit", age : 21}, {name : "aryan", age : 23})
