@@ -1,0 +1,14 @@
+Ques 1 - What problem does next js solves ?
+
+Ans - React is good but have few problems -
+
+1. It's not SEO Optimized - 
+How ranking of the websites usually done by google : 
+Google have crawlers which hits the websites and try to figure out the reference or the serving of the website based on the .html that it gets, the problem with react is that it doesn't provide the basic html file where all the content are written , it just provides a simple vite initialized html file with "root" reference 
+
+2. React doesn't provide out of the box routing you have to use react-router-dom
+
+3. In React project you have to maintain seperate backend and frontend project
+
+4. Waterfalling problem 
+You have to send the request one after another in the react project

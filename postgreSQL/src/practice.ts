@@ -28,11 +28,12 @@ createUsersTalble()
 
 async function inserDatainUsers(){
     await client.connect();
-    const result = await client.query(`
-        INSER INTO users(username , email , password)
-        VALUES 
-        `)
-    console.log(result)
+        const result = await client.query(`
+            INSERT INTO users(username, email, password)
+            VALUES ($1, $2, $3)
+        `, ['john_doe', 'john@example.com', 'securepassword123']);
+
+        console.log('Inserted user:', result.rows[0]);
 }
 
 inserDatainUsers()
