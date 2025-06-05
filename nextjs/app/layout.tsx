@@ -27,6 +27,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="p-4 border-b">
+          30% discount
+        </div>
         {children}
       </body>
     </html>
