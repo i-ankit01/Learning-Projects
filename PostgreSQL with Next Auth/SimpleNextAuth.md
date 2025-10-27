@@ -1,3 +1,5 @@
+// Auth.js v4 
+
 Steps for setting up simple next auth in the projects
 
 1.  make the folder route api/auth/[...nextauth]/route.ts (To catch all the requests coming to this route)
